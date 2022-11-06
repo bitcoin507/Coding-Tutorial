@@ -6,4 +6,6 @@
 header {
     font-family: monospace;
     font-size: 30px;
+    width: 50%;
+    margin: 0 auto;
 }
