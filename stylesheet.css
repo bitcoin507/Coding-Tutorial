@@ -2,3 +2,8 @@
 *, * ::before, * ::after {
     box-sizing: border-box;
 }
+
+header {
+    font-family: monospace;
+    font-size: 5px;
+}
