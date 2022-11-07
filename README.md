@@ -1,2 +1,2 @@
 # Coding-Tutorial
-Begginer guide to coding
+Beginner guide to coding
