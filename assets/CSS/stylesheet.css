@@ -9,3 +9,15 @@ header {
     width: 50%;
     margin: 0 auto;
 }
+
+body {
+    font-family: monospace;
+    font-size: 15px;
+    
+}
+
+#new-text-file {
+    margin-top: 2px;
+    border: solid 2px;
+    border-color: red;
+}
