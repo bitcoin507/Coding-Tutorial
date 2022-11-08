@@ -21,3 +21,23 @@ body {
     border: solid 2px;
     border-color: red;
 }
+#box1 {
+    width: 800px;
+    height: 800px;
+    border: solid 4px red;
+}
+#box2 {
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+#box3 {
+    width: 200px;
+    height: 200px;
+    background-color:  purple;
+}
+#box4 {
+    width: 100px;
+    height: 100px;
+    background-color:  greenyellow;
+}
