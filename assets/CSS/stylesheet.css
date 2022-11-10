@@ -25,13 +25,18 @@ body {
     width: 800px;
     height: 800px;
     border: solid 4px red;
+    position: relative;
 }
 #box2 {
+    
+
     width: 400px;
     height: 400px;
     background-color: blue;
 }
 #box3 {
+    position: sticky;
+    top: 50px; ;
     width: 200px;
     height: 200px;
     background-color:  purple;
@@ -40,4 +45,7 @@ body {
     width: 100px;
     height: 100px;
     background-color:  greenyellow;
+}
+.bold{
+    font-weight: bolder;
 }

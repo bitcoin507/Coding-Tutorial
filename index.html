@@ -9,10 +9,21 @@
 </head>
 <body>
     <header>
-        <h1>Beginer's Coding Tutorial</h1>
+        <h1>Beginer's Coding Tutorial
+
+        <
+
+
+        </h1>
     </header>
     <section>
-        <h2>Introduction</h2>
+        <h2>Introduction
+
+
+
+
+            
+        </h2>
         <p>
             I will attempt to make this guide as simple and intuititive as possible.
             The goal is to enable you to start coding right away and use the K.I.S.S method (Keep It Simple Stupid).
@@ -25,9 +36,7 @@
         <p>
              I will first describe the basic layout of a webpage and how to format it. I will then describe the elements and tags that are used in HTML.
         </p>
-        <h3>
-            Create an HTML template
-        </h3>
+        <h3>Create an HTML template</h3>
         <p>
             I will be using the Visual Studio Code editor. I will be using the HTML Boilerplate extension to create a template for my HTML file.
             <br></br>
@@ -37,9 +46,7 @@
 
                 <img id="new-text-file" src="./assets/images/create new text file.png">
         </p>
-        <h3>
-            Divs and containers
-        </h3>
+        <h3>Divs and containers</h3>
         <p>
             A div  is a type of container tag.Container tags are tags that have some content between their opening and closing tags.A div is a generic tag that we use to organize our content.We can then assign an ID or class to the div to help us identify it and style it.We will do this in an external CSS stylesheet.
         </p>
@@ -61,7 +68,12 @@
                 First lets set the dimentions of our box using the "width" and "height" properties.
                 <br></br>
 
-                <div id="box1"></div> <div id="box2"></div> <div id="box3"></div> <div id="box4"></div>
+                <div id="box1">
+
+                <div id="box2"></div> 
+                <div id="box3"></div> 
+                <div id="box4"></div>
+            </div>
             </p>
             <p>
                 If you are a visual learner it may help to create a template layout first and name all of the page elements.
@@ -70,6 +82,48 @@
                 Lets create some additional boxes and explore the position properties.
                 &lt;div id="box2"&gt &lt;/div &gt  &lt;div id="box3"&gt &lt;/div &gt &lt;div id="box4"&gt &lt;/div &gt
                 Assign each box different propeties in the CSS stylesheet.
+            </p>
+            <h3>
+                Positioning 
+            </h3>
+            <p>
+                Now lets look at how we can use the positions attributes in our CSS sheet to arrange our boxes on the page.
+
+                <ul>
+                    <li>Static: The element is positioned according to the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect. This is the default value.
+                    </li> <br></br>
+
+                    <li>Relative: The element is positioned according to the normal flow of the document. When we move it or offset the element it is moved relative to is original position.So if we indicate top 40 px it will move the element DOWN 40px.Another to picture it is that the new position of the top of the element will be 40 px awayfrom where it was originally.If we indicate left 20px it will move the element 20px to the RIGHT of its original position. The offset does not affect the position of any other elements; thus, the space given for the element in the page layout is the same as if position were static.
+                    </li> <br></br>
+
+                    <li>Absolute:The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block. Its final position is determined by the values of top, right, bottom, and left.
+                    </li> <br></br>
+
+                    <li>Fixed:The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to the initial containing block established by the viewport.
+                    </li> <br></br>
+
+                    <li>Sticky:The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block.</li> <br></br>
+                </ul>
+
+                    <p class="bold">
+                        To sum up:
+                    </p>
+                    <ul>
+                        <li>
+                            A relatively positioned element is an element whose computed position value is relative. The top and bottom properties specify the vertical offset from its normal position; the left and right properties specify the horizontal offset.
+                        </li> <br></br>
+                        <li>
+                            An absolutely positioned element is an element whose computed position value is absolute or fixed. The top, right, bottom, and left properties specify offsets from the edges of the element's containing block. (The containing block is the ancestor relative to which the element is positioned.) If the element has margins, they are added to the offset.
+                        </li> <br></br>
+                        <li>
+                            A stickily positioned element is an element whose computed position value is sticky. It's treated as relatively positioned until its containing block crosses a specified threshold.
+                        </li> <br></br>
+                    </ul>
+                    
+                 <br></br>
+                Play around with the CSS position atributes in the stylesheet to get used familiarize yourself with the eefects they have.
+
+            
             </p>
             
 
