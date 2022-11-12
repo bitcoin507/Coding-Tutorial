@@ -21,30 +21,66 @@ body {
     border: solid 2px;
     border-color: red;
 }
-#box1 {
+.container {
+    border: 5px solid black;
     width: 800px;
-    height: 800px;
-    border: solid 4px red;
+    height: 810px;
+    margin: 50px auto;
     position: relative;
 }
-#box2 {
-    
 
-    width: 400px;
-    height: 400px;
-    background-color: blue;
-}
-#box3 {
-    position: sticky;
-    top: 50px; ;
+.box {
     width: 200px;
     height: 200px;
-    background-color:  purple;
+
 }
-#box4 {
-    width: 100px;
-    height: 100px;
-    background-color:  greenyellow;
+
+.blue {
+    background-color: blue;
+    position : sticky;
+    top: 20px;
+    z-index: 4;
+
+
+}
+
+.purple {
+    background-color: blueviolet;
+    position: sticky;
+    z-index: 3;
+
+    
+
+}
+
+.red {
+    background-color: red;
+    z-index: 2;
+
+}
+
+.green {
+    background-color: green;
+    position: sticky;
+    bottom: 20px;
+    z-index: 1;
+
+}
+
+.purple:hover {
+    background-color: rgb(167, 142, 190);
+}
+
+.blue:hover {
+    background-color: rgb(177, 177, 234);
+}
+
+.red:hover {
+    background-color: rgb(239, 168, 168);
+}
+
+.green:hover {
+    background-color: rgb(150, 233, 150);
 }
 .bold{
     font-weight: bolder;
