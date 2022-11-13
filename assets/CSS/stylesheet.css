@@ -85,3 +85,12 @@ body {
 .bold{
     font-weight: bolder;
 }
+#table-con {
+        border: 2px solid black;
+        width: 800px;
+        height: 750px;
+        padding: 10px;
+        
+
+
+}
