@@ -94,3 +94,66 @@ body {
 
 
 }
+#pageLayout{
+    border: 1px solid black;
+    width: 1300px;
+    height: 1000px;
+    margin: auto;
+}
+#sampleHeader{
+    border: 1px solid red;
+    background-color: antiquewhite;
+    
+    text-align: center;
+}
+nav{
+    border: 4px solid purple;
+    background-color: blanchedalmond;
+    margin: 2px;
+}
+#sampleSection{
+    border: 2px solid green;
+    background-color: gray;
+    margin: 2px;
+}
+#sampleArticle{
+    border: 5px solid blue;
+    background-color: burlywood;
+    margin: 2px;
+}
+#sampleAside{
+    border: 4px solid plum;
+    background-color: blanchedalmond;
+    margin: 2px;
+}
+#sampleFooter{
+    border: 6px solid black;
+    background-color: salmon;
+} 
+span.a {
+    display: inline;
+    /* the default for span */
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+}
+
+span.b {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+}
+
+span.c {
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+}

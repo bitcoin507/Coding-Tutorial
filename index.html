@@ -25,6 +25,7 @@
         <p>
              I will first describe the basic layout of a webpage and how to format it. I will then describe the elements and tags that are used in HTML.
         </p>
+        <article>
         <h3>Create an HTML template</h3>
         <p>
             I will be using the Visual Studio Code editor. I will be using the HTML Boilerplate extension to create a template for my HTML file.
@@ -35,10 +36,14 @@
 
                 <img id="new-text-file" src="./assets/images/create new text file.png">
         </p>
+        </article>
+        <article>
         <h3>Divs and containers</h3>
         <p>
             A div  is a type of container tag.Container tags are tags that have some content between their opening and closing tags.A div is a generic tag that we use to organize our content.We can then assign an ID or class to the div to help us identify it and style it.We will do this in an external CSS stylesheet.
         </p>
+        </article>
+        <article>
         <h3>Boxes</h3>
         <p>
             It may help to think of a webpage as a box with other boxes inside of it. The boxes can be nested inside of each other. The boxes can be styled with CSS.Next we will look at some examples. 
@@ -74,6 +79,8 @@
                 &lt;div id="box2"&gt &lt;/div &gt  &lt;div id="box3"&gt &lt;/div &gt &lt;div id="box4"&gt &lt;/div &gt
                 Assign each box different propeties in the CSS stylesheet.
             </p>
+        </article>
+        <article>
             <h3>
                 Positioning 
             </h3>
@@ -90,7 +97,7 @@
                     <li>Absolute:The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block. Its final position is determined by the values of top, right, bottom, and left.
                     </li> <br></br>
 
-                    <li>Fixed:The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to the initial containing block established by the viewport.
+                    <li>Fixed:The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to the initial containing block established by the viewport, which means it always stays in the same place even if the page is scrolled.
                     </li> <br></br>
 
                     <li>Sticky:The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block.</li> <br></br>
@@ -113,10 +120,13 @@
                     
                  <br></br>
                 Play around with the CSS position atributes in the stylesheet to get used familiarize yourself with the efects they have.There is a lot of information on the web about the position atributes and how they work. We will explore more of them in the future.
+            </p>
+        </article>
 
             
-            </p>
+            
             <br></br>
+            <article>
             <h3>Semantic elements</h3>
             <p>
                 Now lets have a look at semantic elements and see how they can help us organize our content. A semantic element clearly describes its meaning to both the browser and the developer.
@@ -343,6 +353,86 @@
                 </div>
                     
             </p>
+            </article>
+
+            <article>
+                <h3>
+                    Format a page using semantic HTML elements
+                </h3>
+                <p>
+                    Lets create some of the most common semantic HTML elements and style them so that they are visable to get a better idea of page layout.
+                    <br></br>
+                    For our basic layout we will use the following tags.
+                    &lt;header &gt;;&lt;nav &gt;;&lt;section &gt;;&lt;article &gt;;
+                    &lt;aside &gt;;&lt;footer &gt;
+                </p>
+                <div id="pageLayout">
+                    <header id="sampleHeader">
+                        <h1>
+                            Sample Header
+                        </h1>
+
+                    </header>
+                    <nav>
+                        <a href="#" >Email</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Git Hub</a>
+                        <a href="#">Twitter</a>
+                    </nav>
+                    <section id="sampleSection">
+                        <h3>Sample Section</h3>
+                    </section>
+                    <article id="sampleArticle">
+                        <h3>Sample Article</h3>
+                    </article>
+                    <aside id="sampleAside">
+                        <h3>Sample Aside</h3>
+                    </aside>
+                    <footer id="sampleFooter">
+                        <h3>Sample Footer</h3>
+                    </footer>
+
+                </div>
+
+                Other than styling them with a border and background-color to give a  visual representation of the layout of each element and giving the content of the header center-align property, we have not done any additionl styling. This is how the elements will appear in the page layout. They are all block elements; if we add content inside of the parent element they will expand to allow room.
+                <aside>
+                    <h3>
+                        Block elements
+                    </h3>
+                    A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.
+
+A block-level element always takes up the full width available (stretches out to the left and right as far as it can).Notice how the header element was automatically cntered.
+                    <h3>
+                        Display Inline vs Display Inline Block
+                    </h3>
+                   Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.
+
+Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.
+
+Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements.
+
+                   <h3>
+                    Example
+                   </h3>
+
+                   <div>
+
+                   <h1>The display Property</h1>
+
+<h2>display: inline</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="a">Aliquam</span> <span class="a">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+<h2>display: inline-block</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. <span class="b">Aliquam</span> <span class="b">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+<h2>display: block</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="c">Aliquam</span> <span class="c">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+                   </div>
+
+
+                </aside>
+            </article>
             
 
             
