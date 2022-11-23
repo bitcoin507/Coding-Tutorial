@@ -157,3 +157,84 @@ span.c {
     border: 1px solid blue;
     background-color: yellow;
 }
+
+
+
+#pageLayout2 {
+    border: 1px solid black;
+    background-color: bisque;
+    width: 1300px;
+    height: 1000px;
+    margin: auto;
+}
+
+#sampleHeader2 {
+    border: 1px solid red;
+    background-color: antiquewhite;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#nav2 {
+    display:inline-block;
+    width: 80px;
+    height: 700px;
+    border: 4px solid purple;
+    background-color: blanchedalmond;
+    
+}
+
+#sampleSection2 {
+    position:relative;
+    bottom: 565px;
+    display: inline-block;
+    width: 1200px;
+    height: 450px;
+    border: 4px solid green;
+    background-color: gray;
+    margin: 2px;
+}
+
+#sampleArticle2 {
+    position: relative;
+    left: 91px;
+    bottom: 565px;
+    display: inline-block;
+    height: 246px;
+    width: 800px;
+    border: 5px solid blue;
+    background-color: burlywood;
+    margin: 2px;
+}
+
+#sampleAside2 {
+    display: inline-block;
+    position: relative;
+    bottom: 567px;
+    left: 80px;
+    width: 400px;
+    height: 246px;
+    border: 4px solid plum;
+    background-color: blanchedalmond;
+    margin: 2px;
+}
+
+#sampleFooter2 {
+    position: relative;
+    bottom: 565px;
+    margin-bottom: 0px;
+    height: 80px;
+    border: 2px solid rgb(221, 209, 209);
+    background-color: salmon;
+}
+.navLink{
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    
+    
+}
