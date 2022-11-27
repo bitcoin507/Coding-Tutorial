@@ -211,11 +211,11 @@ span.c {
 #sampleAside2 {
     display: inline-block;
     position: relative;
-    bottom: 567px;
+    bottom: 565px;
     left: 80px;
     width: 400px;
     height: 246px;
-    border: 4px solid plum;
+    border: 5px solid plum;
     background-color: blanchedalmond;
     margin: 2px;
 }
@@ -230,6 +230,7 @@ span.c {
 }
 .navLink{
     display: inline-block;
+    margin-left: 3px;
     margin-top: 50px;
     margin-bottom: 40px;
     padding-top: 30px;
@@ -238,3 +239,88 @@ span.c {
     
     
 }
+
+#pageLayout3 {
+    position: relative;
+    border: 1px solid black;
+    background-color: bisque;
+    width: 1300px;
+    height: 1000px;
+    
+}
+
+#sampleHeader3 {
+    border: 1px solid red;
+    background-color: antiquewhite;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    
+}
+
+#nav3 {
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    height: 700px;
+    left: 4px;
+    border: 4px solid purple;
+    background-color: blanchedalmond;
+    
+   
+    
+
+}
+
+#sampleSection3 {
+    display: inline-block;
+    position: absolute;
+    width: 1202px;
+    height: 450px;
+    top: 231px;
+    left: 91px;
+    border: 4px solid green;
+    background-color: gray;
+    
+}
+
+#sampleArticle3 {
+    position: absolute;
+    height: 246px;
+    width: 800px;
+    left: 89px;
+    bottom: 64px;
+    border: 5px solid blue;
+    background-color: burlywood;
+    margin: 2px;
+}
+
+#sampleAside3 {
+    position: absolute;
+    width: 400px;
+    height: 246px;
+    right: 4px;
+    bottom: 65px;
+    border: 5px solid plum;
+    
+}
+
+#sampleFooter3 {
+    position: absolute;
+    height: 65px;
+    width: 1290px;
+    bottom: 0px;
+    border: 2px solid rgb(221, 209, 209);
+    background-color: salmon;
+    margin-left: 5px;
+    
+}
+
+.navLink {
+       display: inline-block;
+        margin-left: 3px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+  }
