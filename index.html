@@ -147,7 +147,7 @@
                     
                     <tr>
                         <td>
-                            &lt;article&gt
+                            &lt;article&gt;
 
                         </td>
                             
@@ -161,7 +161,7 @@
                         </td>
                     </tr>
                     <td>
-                        &lt;aside&gt
+                        &lt;aside&gt;
                     </td>
                     <td>
                         <ul>
@@ -175,7 +175,7 @@
                             
                     <tr>
                         <td>
-                            &lt;details&gt
+                            &lt;details&gt;
                             
                         </td>
                         <td>
@@ -191,7 +191,7 @@
                     </tr>
                     <tr>
                         <td>
-                            &lt;figcaption&gt
+                            &lt;figcaption&gt;
                         </td>
                         <td>
                             <ul>
@@ -204,7 +204,7 @@
                     </tr>
                     <tr>
                         <td>
-                            &lt;figure&gt
+                            &lt;figure&gt;
                             
                         </td>
                         <td>
@@ -220,7 +220,7 @@
                     </tr>
                     <tr>
                         <td>
-                            &lt;footer&gt
+                            &lt;footer&gt;
                             
                         </td>
                         <td>
@@ -237,7 +237,7 @@
                     </tr>
                     <tr>
                         <td>
-                            &lt;header&gt
+                            &lt;header&gt;
                             
                         </td>
                         <td>
@@ -254,7 +254,7 @@
                     </tr>
                     <tr>
                         <td>
-                            &lt;main&gt
+                            &lt;main&gt;
                         </td>
                         <td>
                             <ul>
@@ -269,7 +269,7 @@
                     </tr>
                     <tr>
                         <td>
-                           &lt;mark&gt 
+                           &lt;mark&gt; 
                         </td>
                         <td>
                             <ul>
@@ -285,7 +285,7 @@
                     </tr>
                     <tr>
                         <td>
-                           &lt;nav&gt 
+                           &lt;nav&gt; 
                         </td>
                         <td>
                             <ul>
@@ -300,7 +300,7 @@
                     </tr>
                     <tr>
                         <td>
-                            &lt;section&gt
+                            &lt;section&gt;
                         </td>
                         <td>
                             <ul>
@@ -316,7 +316,7 @@
                     </tr>
                     <tr>
                         <td>
-                           &lt;summary&gt 
+                           &lt;summary&gt; 
                         </td>
                         <td>
                             <ul>
@@ -332,7 +332,7 @@
                     </tr>
                     <tr>
                         <td>
-                            &lt;time&gt
+                            &lt;time&gt;
                         </td>
                         <td>
                             <Ul>
@@ -502,6 +502,91 @@ Compared to display: block, the major difference is that display: inline-block d
                     </footer>
 
                 </div>
+                <article>
+                    <h3>Flex Boxes</h3> 
+
+                    <p>We can set a parent item or container or box to have a display propert of Flex, this creates a Flexbox and all of the child elements inside will become flex items. We can set certain properties to our Flex container that will control the layout of the flex items it contains.This helps automate much of the manual layout we diid using the position property.
+                    </p>
+                    <p>
+                        If we create a div container with child items the child items will be block elements and eah one will take up a seperate line as we learned.
+                    </p>
+                    <p>
+                        Let's create a Flex Container and  set width, hieght, border,and background color properties. We will also create 4 Flex items and set a min height,width, border and background color to make it easy to visualize everything.
+                    </p>
+                    <p>
+                        Now we can see that our flex items are laid out along the X axis or in a row. With display flex the default behaviour is that all flex items are laid out in a row. We can change this by assigning the flex direction property to our Flex container to column.There are 2 axis we use for Flexbox to position and layout our flexbox items, we dont call them the x and y axis but the main axis and the cross axis.For rows the main axis runs horizontially and the cross axis runs vertically. Columns are the exact opposite the main axis runs vertically and the cross axix horizontaly.
+                    </p>
+                    <p>
+                        Notice that if we shrink the width of the screen the flex items will shrink in width so that all of them fit into the available space. If we add more flex items their width will shrink to accomodate them all fitting on one line.This is the default behavior.
+                    </p>
+
+                    <div class="flexBoxContainer">
+                        <div class="flexBoxItem one"> </div>
+                        <div class="flexBoxItem two"> </div>
+                        <div class="flexBoxItem three"> </div>
+                        <div class="flexBoxItem four"> </div>
+                        <div class="flexBoxItem five"> </div>
+                        <div class="flexBoxItem six"> </div>
+                        <div class="flexBoxItem seven"> </div>
+                        <div class="flexBoxItem eight"> </div>
+                        <div class="flexBoxItem "> </div>
+                        <div class="flexBoxItem "> </div>
+                        <div class="flexBoxItem "> </div>
+                        <div class="flexBoxItem "> </div>
+                        
+                        
+                    </div>
+                    <br></br>
+                     <p>
+                        If we want to keep the flex items width and start on a new row, we add the flex-wrap property to wrap our Flex container. Each time there is no more room to fit another flexbox item on a row it will drop down and start a new row
+                    </p>
+
+                    <div class="flexBoxContainerB">
+                        <div class="flexBoxItem one"> </div>
+                        <div class="flexBoxItem two"> </div>
+                        <div class="flexBoxItem three"> </div>
+                        <div class="flexBoxItem four"> </div>
+                        <div class="flexBoxItem five"> </div>
+                        <div class="flexBoxItem six"> </div>
+                        <div class="flexBoxItem seven"> </div>
+                        <div class="flexBoxItem eight"> </div>
+                        <div class="flexBoxItem "> </div>
+                        <div class="flexBoxItem "> </div>
+                        <div class="flexBoxItem "> </div>
+                        <div class="flexBoxItem "> </div>
+                        
+                        
+                    </div>
+                    <p>
+                        Now lets look at a column layout
+                        <br></br>
+                        <div class="flexBoxContainerC">
+                        <div class="flexBoxItem one"> </div>
+                        <div class="flexBoxItem two"> </div>
+                        <div class="flexBoxItem three"> </div>
+                        <div class="flexBoxItem four"> </div>
+                        <div class="flexBoxItem five"> </div>
+                        <div class="flexBoxItem six"> </div>
+                        <div class="flexBoxItem seven"> </div>
+                        <div class="flexBoxItem eight"> </div>
+                        </div>
+
+                    </p>
+                    <p>
+                        Now the height of the flex items wil shrink according to the size of the container just as the width did with a row layout.Lets add the flex-wrap property again and we will see that the flexitems maintain the height we assigned them and will form a new column when there is no more space along the main axis
+                    </p>
+                    <div class="flexBoxContainerD">
+                        <div class="flexBoxItem one"> </div>
+                        <div class="flexBoxItem two"> </div>
+                        <div class="flexBoxItem three"> </div>
+                        <div class="flexBoxItem four"> </div>
+                        <div class="flexBoxItem five"> </div>
+                        <div class="flexBoxItem six"> </div>
+                        <div class="flexBoxItem seven"> </div>
+                        <div class="flexBoxItem eight"> </div>
+                        </div>
+                    
+                </article>
 
     
         
