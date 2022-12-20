@@ -1,0 +1,31 @@
+.gridContainer {
+    border: solid 2px black;
+    background-color: blanchedalmond;
+    display: grid;
+    
+
+
+}
+ .gridElement {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: solid 1px rgb(240, 10, 22);
+     background-color: blue;
+
+
+ }
+  /*.gridContainer {
+      border: solid 2px black;
+      background-color: blanchedalmond;
+      display: grid;
+
+
+  }*/
+  .gridContainerB {
+      border: solid 2px black;
+      background-color: blanchedalmond;
+      display: grid;
+      
+
+  }

@@ -10,8 +10,8 @@
 <body>
     <header>
         <h1>Beginer's Coding Tutorial</h1>
-    </header>
-    <section>
+     </header>
+     <section>
         <h2>Introduction</h2>
         <p>
             I will attempt to make this guide as simple and intuititive as possible.
@@ -584,13 +584,394 @@ Compared to display: block, the major difference is that display: inline-block d
                         <div class="flexBoxItem six"> </div>
                         <div class="flexBoxItem seven"> </div>
                         <div class="flexBoxItem eight"> </div>
-                        </div>
+                        
+                    </div>
+
+                     
+                        <article><h3>
+                            Justify content and align items
+                        </h3> 
+                        <p>
+                        The 2 main properties that we can assign to our flexbox container to manipulate the layout of our flex items are justify content and align items.
+                        </p>
+
+                        <p>
+                            Remember we talked about the main axis and the cross axis earlier. In a row layout the justify content property  will align the flex items along the main axis or horizontally. The align items property will align the items accross the cross axis. If the flex direction is set to column this be be the opposite justify content will align the items accross the main axis which in this case will be vertically and the align items property will align the items horizontally.
+                          </p>
+                        <p>
+                            The justify-content property aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally).
+                         </p>
+                         <h1>
+                            Property Values
+                         </h1>
+                         <table>
+                            <tr>
+                                <th>Value</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>flex-start</td>
+                                <td>Default value. Items are positioned at the beginning of the container</td>
+                            </tr>
+                            <tr>
+                                <td>flex-end</td>
+                                <td>Items are positioned at the end of the container</td>
+                            </tr>
+                            <tr>
+                                <td>Center</td>
+                                <td>Items are positioned in the center of the container	
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>space-between</td>
+                                <td>Items will have space between them	
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>space-around</td>
+                                <td>Items will have space before, between, and after them	
+                               </td>
+                            </tr>
+                            <tr>
+                                <td>space-evenly</td>
+                                <td>Items will have equal space around them</td>
+                            </tr>
+                            <tr>
+                                <td>initial</td>
+                                <td>Sets this property to its default value.</td>
+                            </tr>
+                            <tr>
+                                <td>inherit</td>
+                                <td>Inherits this property from its parent element.</td>
+                            </tr>
+                        </table>
+
+                        <p>
+                            Have a play with the justify content property here.
+                            <a class="studyLink" href="https://www.w3schools.com/cssref/playdemo.php?filename=playcss_justify-content&preval=flex-start" target="_blank">justify-content</a>
+                        </p>
+                        <p>
+                           <h3> align-items and align-content</h3>
+                           the align-items property is for aligning items along the cross axis if it is a row it will align the items horizontally.If the flexbox div  has a  flex-direction property of column it would align them vertcally.
+
+                           The align content property aligns multi-line content along the cross axis.
+                             Property Values
+                        </h1>
+                        <table>
+                            <tr>
+                                <th>Value</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>stretch</td>
+                                <td>Default. Items are stretched to fit the container<td>
+                            </tr>
+                             <tr>
+                                <td>flex-start</td>
+                                <td>Items are positioned at the beginning of the container
+                                </td>
+td>
+                            </tr>
+                            <tr>
+                                <td>flex-end</td>
+                                <td>Items are positioned at the end of the container<td>
+                                </tr>
+                                <tr>
+                                <td>center</td>
+                                <td>Items are positioned in the center of the container	
+                                </td>
+                                </tr>
+                                <tr>
+                                <td>baseline</td>
+                                <td>Items are positioned at the baseline of the container	
+                                </td>
+                                </tr>
+    
+                           
+                                <td>initial</td>
+                                <td>Sets this property to its default value.</td>
+                                </tr>
+                                <tr>
+                                <td>inherit</td>
+                                <td>Inherits this property from its parent element.<td>
+                                </tr>
+                              </table>
+
+                           Have a play with align items and align content here.
+                           <a class="studyLink" href= "https://www.w3schools.com/cssref/playdemo.php?filename=playcss_align-items" target="_blank">align-items</a>
+
+                            </p>
+                            </article> 
+                        
+
+                     
+                         <article>
+
                     
+                         <h3>
+                            flex-grow;flex-shrink and flex-basis
+                         </h3>
+                         <p>
+                        We looked at assigning properties to our flex container to align the flex items, now lets look at some properties thatwe can assign to the flex items themselves.
+                        The flex grow property sets the rate of growth for the flex elements. Notice that by default they will not take up all of the avaialble space in the flex container
+                        </p>
+
+                         <div class="flexBoxContainerE">
+                        <div class="flexBoxItem one"> </div>
+                        <div class="flexBoxItem two"> </div>
+                        <div class="flexBoxItem three"> </div>
+                        
+                        
+                    </div>
+                    <h3>flex-grow</h3>
+
+                    If we set the flex property to grow the flex items will grow to occupy the available space in the flex container.Lets apply the flex-grow property to our flexbox items.
+                    <div class="flexBoxContainerE">
+                        <div class="flexBoxItem grow"> </div>
+                        <div class="flexBoxItem grow"> </div>
+                        <div class="flexBoxItem grow"> </div>
+
+                
+                    </div>
+                    <p>
+                       We can also set the flex-grow property and value to each individual item.The flex-grow property value assigned specifies how much the item will grow relative to the rest of the flexible items inside the same container. for example an item with a flex grow value of 2 will be allocated 2 times as much room to grow as an item with a value of 1.
+                    </p>
+                    <h3>flex-shrink</h3>
+                    <p>
+                        The flex-shrink property specifies how the item will shrink relative to the rest of the flexible items inside the same container. The default is that all items shrink equally but we can set different flex-shrink values to each item just as with flex-grow.
+                    </p>
+                    <h3>
+                        flex-basis
+                    </h3>
+                    <p>
+                        The flex-basis property defines the size of the flex-item along the main axis of the flex container. The main axis is horizontal if flex-direction is set to row and it’ll be vertical if the flex-direction property is set to column.
+                    </p>
+
+                    <h1>Flex shorthand</h1>
+                    <p>
+                        The flex property alone on a flex item is the shorthand for flex-grow, flex-shrink and flex-basis. The second and third parameters (flex-shrink and flex-basis) are optional.
+                    </p>
+                    
+                    Have a play with these properties to familiarise ourselves with their effects.
+
                 </article>
 
+                <article>
+                    <h1>Grid</h1>
+                    <p>
+                        Grid is similar to Flexbox and shares some of the same properties. Like Flexbox it uses a parent container which in turn holds the child elements. We can also add properties to the Grid container to affect both the gids layout and the layout of the child elements within the grid.Grid howebver lets us layout our elements in 2 dimensions instead of just one. Lets create a div of grid container and set the display to grid and 3 child elements.We wil also style them with a border and background-color to make them visible.
+                    </p>
+                    <div class="gridContainer">
+                        <div class="gridElement"><h1>Grid Element 1</h1></div>
+                        <div class="gridElement"><h1>Grid Element 2</h1></div>
+                        <div class="gridElement"><h1>Grid Element 3</h1></div>
+                        
+                    </div>
+                    <p>
+                        Notice that alone the property grid doesn't have any effect on the layout.
+                    </p>
+                    
+                        <h3>Grid columns and grid rows</h3>
+                        <p>
+                            The  main property we will use to layout our child elements is grid-layout. We need to define specific columns or rows for our grid. To do this we use the property grid-template.Lets define our columns first; we do this with the proerty grid-template-columns followed by setting the explicit size or ratio of each column.For example if we set grid-template-columns: 100px 200px it would create two columns, one with a width of 100px and the other with a width of 200px. If you want the elements to use all of the avaiable space in your container we would assign the sizes as %. Lets look at an example where we assign 3 columns widths of 200px,300px and 500px respectivly.
+                            
+                            
+                            
+
+                        
+                        </p>
+                         <div class="gridContainerB">
+                        <div class="gridElement 1"><h1>Grid Element 1</h1></div>
+                        <div class="gridElement 2"><h1>Grid Element 2</h1></div>
+                        <div class="gridElement 3"><h1>Grid Element 3</h1></div>
+                        <div class="gridElement 4"><h1>Grid Element 4</h1></div>
+                    </div>
+
+                    <p>
+                        We can define our rows as well now. If we dont define our row the height of the grid element will be determined by the content it contains and the grid container will in turn be defined by height of the grid row. We define our rows the exact same way using the grid-template-rows property.
+                    </p>
+                     <div class="gridContainerC">
+                        <div class="gridElement 1"><h1>Grid Element 1</h1></div>
+                        <div class="gridElement 2"><h1>Grid Element 2</h1></div>
+                        <div class="gridElement 3"><h1>Grid Element 3</h1></div>
+                        <div class="gridElement 4"><h1>Grid Element 4</h1></div>
+                    </div>
+                    <p>
+                        In the above example we gave our rows a heightof 150px and 250 px respectivly. So now we have 3 columns and 2 rows and our grid items are laid out in our grid container according to the parameters we set. We can also set grid-auto-row which will assign any row that isnt already defined a set height. So any further row created when we add more grid items will be whatever height we asssigned to grid-auto-row.
+                    </p>
+                    <h3>
+                        min-max
+                    </h3>
+                    <p>
+                        As you can see if we dont define the height of a grid row it will be governed by the content it contains.It will stretch accordingly to fit the content.If we atribute a height to our rows or an auto row, any content that takes up more space that the grid items height will spill over. This is where min-max comes in. We can give grid-auto-rows the min-max property and assign a min(the first value) of 150px and the max to auto so it will still stretch to accomodate its content.the syntax is as follows grid-auto-rows: min-max(150px ,auto);
+                    </p>
+
+                    <h3>
+                        row-gap; column-gap
+                    </h3>
+                    <p>
+                        The row-gap property specifies the size of the gap between the grid rows.The row-gap property was formerly known as grid-row-gap.
+                    </p>
+                    <p>
+                        The column-gap CSS property sets the size of the gap (gutter) between an element's columns.
+                    </p>
+                    <p> grid-gap property will set both the column and row gaps
+                    </p>
+                    <h3>
+                        grid-template-area
+                    </h3>
+                    <p>
+                        We can also layout our grid items using the property grid-template-areas.We do this by first assigning grid-template-areas to our grid-container. We can assign a string value for each area we want to define. For example if we had a 3 column layout and we wanted the header row to stretch accross all 3 columns we would assign "header header header" as one of the grid template areas.Then if we assigned the header property to a grid item, item 1 for example it would take up all of the area defined by grid-template area.Think of grid-template area as the frame,which you can specify its dimensions, then you stretch the grid utem over it like an elastic band over the grid points in the grid-template-area 
+                        <br></br>
+                        You can further define row and columns.Here is an example
+                        using grid-template-areas: header header header      
+                                                   content content sidebar    
+                                                   content content sidebar             
+
+                        Then we set the grid items to the items that we want them to correspond to. We can see if we set gridElement 1 to header item1 will take up the entire first row in our grid. If we set item 2 to content the item will take up all of the surface area in our grid that we have assigned a value content.And if we set item 3 to have a value of sidebar it ill take up all of the area assigned to side bar.
+                        
+                        <h3>grid-column-start; grid-column-end;grid-row start;grid row end</h3>
+                        <p>
+                            We can also define the space our grid items wil span by using the grid-column-start and grid-column end properties on the grid items. We assign to our grid item the column that it should start on, so if we set grid item 1 grid-column start: 1; grid-column-end:4; it will span the whole 3 columns. We can also do this for the rows with grid-row-start and grid-row-end.Note that grid-column end -1 will also span the whole row.
+                            We can abbreviate this even more by using the grid-column or grid-row property and assigning a numerical value for the start and end seperated by a / ie grid-column:1/4; or grid-column:1/-1
+
+                        </p>
+
+                        <h3>
+                            span
+                        </h3>
+                        <p>
+                            Another way that we can define the area that our grid items occupy by using the span property on our grid items.This syntax wise is the simplest property. We simple assign the propert of span to ur gid item ans specify the number of columns or rows we want to span. ie
+                            .gridElment 2{
+                                grid-row:span 2;
+                                
+                            }
+
+                            
+                        </p>
+                        <h3>
+                             align and justify content
+                        </h3>
+
+                        <p>When working with grid layout you have two axes available to align things against the block or column axis and the inline or row axis. The block axis is the axis upon which blocks are laid out in block layout. If you have two paragraphs on your page they display one below the other, so it is this direction we describe as the block axis.<br></br>
+                            We can justify and align both our grid container and our grid items within our container.This is similar to how we justify and align in flexbox.<br></br>
+                            To align our grid container along the inline axis we set the property of justify-content to center.Below is a list of the different values we can set. 
+                            <h1>
+                            Property Values
+                         </h1>
+                         <table>
+                            <tr>
+                                <th>Value</th>
+                                <th>Description</th>
+                             </tr>
+                             <tr>
+                                <td>start</td>
+                                <td>Default value. Items are positioned at the beginning of the container</td>
+                             </tr>
+                             <tr>
+                                <td>end</td>
+                                <td>Items are positioned at the end of the container</td>
+                             </tr>
+                             <tr>
+                                <td>Center</td>
+                                <td>Items are positioned in the center of the container	
+                                </td>
+                             </tr>
+                             <tr>
+                                <td>space-between</td>
+                                <td>Items will have space between them	
+                                </td>
+                             </tr>
+                             <tr>
+                                <td>space-around</td>
+                                <td>Items will have space before, between, and after them	
+                               </td>
+                             </tr>
+                             <tr>
+                                <td>space-evenly</td>
+                                <td>Items will have equal space around them</td>
+                             </tr>
+                             <tr>
+                                <td>initial</td>
+                                <td>Sets this property to its default value.</td>
+                             </tr>
+                             <tr>
+                                <td>inherit</td>
+                                <td>Inherits this property from its parent element.</td>
+                            </tr>
+                         </table>
+                         </p>
+                      
+                         To align our grid container along the block or column axis we use the align-content property and set its value accordingly. Remember that in order to do this we mus have set a height to our grid container.
+                            
+                         <h1>Values</h1>
+                         
+                         <table>
+                             <tr>
+                                <th>Value</th>
+                                <th>Description</th>
+                             </tr>
+                             <tr>
+                                <td>stretch</td>
+                                <td>Default. Items are stretched to fit the container<td>
+                             </tr>
+                             <tr>
+                                <td>start</td>
+                                <td>Items are positioned at the beginning of the container
+                                </td>
+
+                             </tr>
+                             <tr>
+                                <td>end</td>
+                                <td>Items are positioned at the end of the container<td>
+                                </tr>
+                                <tr>
+                                <td>center</td>
+                                <td>Items are positioned in the center of the container	
+                                </td>
+                                </tr>
+                                <tr>
+                                <td>baseline</td>
+                                <td>Items are positioned at the baseline of the container	
+                                </td>
+                                </tr>
     
-        
+                           
+                                <td>initial</td>
+                                <td>Sets this property to its default value.</td>
+                                </tr>
+                                <tr>
+                                <td>inherit</td>
+                                <td>Inherits this property from its parent element.<td>
+                                </tr>
+                              </table>
+                    </p>
+                    <h3>justify and align items </h3>
+                    <p>
+                    We looked at how we can justify and align the actual container.Now we will justify and align the actual grid items within the container. To do this we use the properties justify-items and align-items. We will aslo use the block/column or inline/row axes.The default for both is stretch. Just as with flexbox this will align the actual grid items position within our grid containers rows and columns. 
+                    </p>
+                    <h3>
+                        Align self
+                    </h3>
+                      <p>
+                        Just as with flexbox we can override the alignment that we have assigned to our items in our grid container by assigning the align-self property to an specific grid item/s
+                      </p>
+                      <p>
+                        Have a play with the different values  to get familiar with them. Using grid containers for page layout and then placing flex containers within the grid items is a very popular way of laying out a website.
+                      </p>
+                    
+
+                    
+
+                </article>
     </section>
-    
 </body>
 </html>
+
+                       
+
+                    
+
+
+
+   

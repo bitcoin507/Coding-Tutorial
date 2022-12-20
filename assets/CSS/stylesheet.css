@@ -326,7 +326,6 @@ span.c {
   }
   .flexBoxContainer{
     display: flex;
-    
     border: 2px solid blue;
     background-color: bisque;
     height: 800px;
@@ -362,7 +361,8 @@ span.c {
     height: 100px;
     width: 200px;
   }
-  .one{
+  /*.one{
+    
     
     
     
@@ -375,10 +375,13 @@ span.c {
     
     
     
+    
+    
 
   }
 
   .three{
+    
     
     
     
@@ -394,4 +397,65 @@ span.c {
 
   .five{
     
-  }
+  }*/
+
+   .flexBoxContainerE {
+       display: flex;
+       border: 2px solid blue;
+       background-color: bisque;
+       
+   }
+
+   .studyLink{
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: bolder;
+   }
+
+   .grow{
+    flex-grow: 1;
+   }
+
+   .gridContainer{
+    border: solid 2px black;
+    background-color: blanchedalmond;
+    display: grid;
+    
+
+   }
+
+   .gridContainerB {
+       border: solid 2px black;
+       background-color: blanchedalmond;
+       display: grid;
+       grid-template-columns: 300px 200px 500px;
+
+
+   }
+          .gridContainerC {
+              border: solid 2px black;
+              background-color: blanchedalmond;
+              display: grid;
+              grid-template-columns: 300px 200px 500px;
+              grid-template-rows: 150px 250px;
+    
+    
+          }
+
+   .gridElement{
+    border: solid 1px rgb(240, 10, 22);
+    background-color: blue;
+
+
+   }
+   
+
+   
+
+                
+
+ 
+      
+                               
+                                                               
+           
