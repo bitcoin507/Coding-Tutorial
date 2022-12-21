@@ -1,31 +1,92 @@
 .gridContainer {
-    border: solid 2px black;
-    background-color: blanchedalmond;
     display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 150px 400px 250px 150px;
+    
+    
+    gap: 10px;
     
 
 
 }
- .gridElement {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     border: solid 1px rgb(240, 10, 22);
-     background-color: blue;
+body{
+    background-color: rgb(1, 1, 51);
+}
+.navbar {
+    grid-column: span 3;
+
+
+}
+.navbar .container{
+    display: flex;
+    min-height: 140px;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+ 
+
+  .header{
+    grid-column: span 3;
+    background-image: url(/assets/images/WallpaperDog-996034.jpg);
+    border-radius: 10px;
+  }
+  .header:hover{
+    color: rgba(255, 255, 255, 1);
+        box-shadow: 5px 10px 25px rgba(226, 208, 240, 0.4);
+    }
+  
+ 
+ 
+  .article{
+     font-family: Comic Sans MS;
+     font-size: large;
+     color: aliceblue;
+     align-content: center;
+     grid-column: span 2;
+     align-self: center;
+     
+     
 
 
  }
-  /*.gridContainer {
-      border: solid 2px black;
-      background-color: blanchedalmond;
-      display: grid;
+ .article .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+    
+ }
+ 
+
+ .sidebar {
+    font-family: Comic Sans MS;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    }
+
+ .sidebar .container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 10px;
+     
+    
+ }
+  .footer {
+      display: flex;
+      grid-column: span 3;
+      color: aliceblue;
+      justify-content: center;
+      align-items: center;
 
 
-  }*/
-  .gridContainerB {
-      border: solid 2px black;
-      background-color: blanchedalmond;
-      display: grid;
+  }
+  .footer .container {
+      display: flex;
+      align-items: center;
+    
       
-
   }
